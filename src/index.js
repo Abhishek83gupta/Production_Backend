@@ -1,6 +1,7 @@
 // const dotenv = require('dotenv').config({path:' ./env'})    // for common js 
 import dotenv from "dotenv"
 import connectDB from "./db/index.js"
+import { app } from "./app.js"
 dotenv.config({
     path:'./.env'
 })                     // config method which takes an object
