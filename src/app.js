@@ -16,4 +16,23 @@ app.use(express.static("public"))   // for store images,pdf,etc
 app.use(cookieParser()) // for cookies
 
 
+
+
+// routes 
+import userRouter from './routes/user.routes.js'
+
+
+
+// routes Declaration 
+app.use("/api/v1/users", userRouter)
+
+
+
+
+
+
+
+
+
+
 export  {app}
